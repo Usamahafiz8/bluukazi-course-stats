@@ -273,6 +273,7 @@
                                         <tr>
                                             <th>Name</th>
                                             <th>Email</th>
+                                            <th>Phone Number</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -281,6 +282,7 @@
                                                 <tr>
                                                     <td>${user.firstname}</td>
                                                     <td>${user.email}</td>
+                                                    <td>${user.phone_number || 'N/A'}</td>
                                                 </tr>
                                             `).join('') : 
                                             '<tr><td colspan="3">No interested job seekers</td></tr>'}
